@@ -1,0 +1,15 @@
+Mystères au Wyoming — le wiki des joueurs
+
+Ouvrir mysteres-au-wyoming.html dans un navigateur, avec le dossier « images » à côté.
+
+Mettre les images en ligne :
+1. Déposer le dossier « images » chez un hébergeur qui donne des adresses directes (GitHub Pages, un site perso, un serveur…).
+2. Dans le wiki, ouvrir le réglage $:/config/wyoming/images (recherche, onglet « Plus », ou taper le titre dans la recherche)
+   et remplacer « images/ » par l'adresse du dossier, avec la barre finale, ex. https://exemple.org/wyoming/images/
+3. Enregistrer le wiki : le fichier HTML seul suffit alors aux joueurs.
+
+Après une séance :
+- le statut d'un personnage (à jouer, survivant, mort, fou) se change dans son champ « statut » ;
+- le Journal de campagne se remplit à la main.
+
+Pour tout régénérer : Outils/wiki_joueurs.py (voir Outils/LISEZMOI.md). Attention, cela écrase les modifications faites à la main dans le wiki.
