@@ -1602,7 +1602,12 @@ Error message and password prompt
 {
 "title": "Campagne",
 "text": "",
-"list": "[[La campagne]] [[Les règles]] [[Kiki, le chihuahua]] [[Nero, le chat noir]] [[Choisir un personnage]] [[Journal de campagne]]"
+"list": "[[La campagne]] [[Les règles]] [[Choisir un personnage]] [[Journal de campagne]]"
+},
+{
+"title": "Compagnons",
+"text": "",
+"list": "[[Kiki, le chihuahua]] [[Nero, le chat noir]]"
 },
 {
 "title": "La campagne",
@@ -1619,13 +1624,13 @@ Error message and password prompt
 {
 "title": "Kiki, le chihuahua",
 "text": "\u003Cdiv class=\"wy-compagnons\">\u003C$image source={{{ [{$:/config/wyoming/images}addsuffix[compagnons/kiki-1.jpg]] }}} class=\"wy-compagnon-img\" alt=\"\"\"Kiki\"\"\"/>\u003C$image source={{{ [{$:/config/wyoming/images}addsuffix[compagnons/kiki-2.jpg]] }}} class=\"wy-compagnon-img\" alt=\"\"\"Kiki\"\"\"/>\u003C$image source={{{ [{$:/config/wyoming/images}addsuffix[compagnons/kiki-3.jpg]] }}} class=\"wy-compagnon-img\" alt=\"\"\"Kiki\"\"\"/>\u003C/div>\n\nUn chihuahua de quatre ans, fauve, aux yeux ronds et aux oreilles dressées comme des antennes. Très intelligent, et incapable de rester discret plus de trente secondes.\n\nKiki traîne d'une ville à l'autre du Wyoming. Selon les jours, c'est le chien d'un ranch qui a sauté dans un pick-up, celui qu'on trouve sous la table d'un repas, ou celui qui renifle à la porte de service d'un diner. Où qu'il soit, il s'attache à l'un d'entre vous et ne le lâche plus.\n\n!! En jeu\n\n* Kiki fouille, renverse, mâchonne et aboie au mauvais moment. Ses bêtises mettent parfois au jour un objet ou un document.\n* Pour remarquer ce qu'il rapporte, il faut un jet de ''Trouver objet caché''. Raté, la chose reste où elle est, et il faudra la trouver autrement.\n* Kiki ne parle pas : c'est à vous de comprendre ce que vous avez trouvé.\n* Il peut aussi vous mettre en danger, en aboyant ou en fouillant là où il ne faut pas.\n\n→ [[Nero, le chat noir]] · [[Les règles]]\n",
-"tags": "Campagne",
+"tags": "Compagnons",
 "caption": "Kiki, le chihuahua"
 },
 {
 "title": "Nero, le chat noir",
 "text": "\u003Cdiv class=\"wy-compagnons\">\u003C$image source={{{ [{$:/config/wyoming/images}addsuffix[compagnons/nero-1.jpg]] }}} class=\"wy-compagnon-img\" alt=\"\"\"Nero\"\"\"/>\u003C$image source={{{ [{$:/config/wyoming/images}addsuffix[compagnons/nero-2.jpg]] }}} class=\"wy-compagnon-img\" alt=\"\"\"Nero\"\"\"/>\u003C$image source={{{ [{$:/config/wyoming/images}addsuffix[compagnons/nero-3.jpg]] }}} class=\"wy-compagnon-img\" alt=\"\"\"Nero\"\"\"/>\u003C/div>\n\nUn chat noir aux yeux d'ambre, silencieux. On le croise dans presque toutes les villes, toujours là où on ne l'attend pas : assis devant une porte, couché sur un registre, dressé au bord d'une voie ferrée. Puis il disparaît.\n\nPersonne ne sait à qui il est. Chat très intelligent, ou autre chose ? Chacun se fait son idée.\n\n!! En jeu\n\n* Nero va et vient à sa guise. Il s'assoit, fixe, feule, suit quelqu'un, gratte une porte, puis s'en va.\n* Pour comprendre son manège, il faut un jet d’''Idée''. Raté, son geste reste un mystère.\n* Libre à vous d'en tenir compte ou non.\n\n→ [[Kiki, le chihuahua]] · [[Les règles]]\n",
-"tags": "Campagne",
+"tags": "Compagnons",
 "caption": "Nero, le chat noir"
 },
 {
@@ -1771,7 +1776,7 @@ Error message and password prompt
 },
 {
 "title": "$:/wyoming/sommaire",
-"text": "\u003Cdiv class=\"wy-sommaire\">\n\n[[Accueil|Bienvenue au Wyoming]]\n\n!!! La campagne\n\u003C\u003Clist-links filter:\"[tag[Campagne]]\">>\n\n!!! Les scénarios\n\u003C$list filter=\"[tag[Scénarios]nsort[numero]]\">\n\u003Cdetails class=\"wy-toc\">\u003Csummary>\u003C$link>\u003C$text text={{!!caption}}/>\u003C/$link>\u003C/summary>\n\u003Cul>\u003C$list filter=\"[all[current]tagging[]!tag[Personnage]]\" variable=\"t\">\u003Cli>\u003C$link to=\u003C\u003Ct>>>\u003C$transclude tiddler=\u003C\u003Ct>> field=\"caption\">\u003C$text text=\u003C\u003Ct>>/>\u003C/$transclude>\u003C/$link>\u003C/li>\u003C/$list>\u003C/ul>\n\u003Cul class=\"wy-toc-pj\">\u003C$list filter=\"[all[current]tagging[]tag[Personnage]nsort[ordre]]\">\u003Cli>\u003C$link/>\u003C/li>\u003C/$list>\u003C/ul>\n\u003C/details>\n\u003C/$list>\n\u003C/div>\n",
+"text": "\u003Cdiv class=\"wy-sommaire\">\n\n[[Accueil|Bienvenue au Wyoming]]\n\n!!! La campagne\n\u003C\u003Clist-links filter:\"[tag[Campagne]]\">>\n\n!!! Kiki et Nero\n\u003C\u003Clist-links filter:\"[tag[Compagnons]]\">>\n\n!!! Les scénarios\n\u003C$list filter=\"[tag[Scénarios]nsort[numero]]\">\n\u003Cdetails class=\"wy-toc\">\u003Csummary>\u003C$link>\u003C$text text={{!!caption}}/>\u003C/$link>\u003C/summary>\n\u003Cul>\u003C$list filter=\"[all[current]tagging[]!tag[Personnage]]\" variable=\"t\">\u003Cli>\u003C$link to=\u003C\u003Ct>>>\u003C$transclude tiddler=\u003C\u003Ct>> field=\"caption\">\u003C$text text=\u003C\u003Ct>>/>\u003C/$transclude>\u003C/$link>\u003C/li>\u003C/$list>\u003C/ul>\n\u003Cul class=\"wy-toc-pj\">\u003C$list filter=\"[all[current]tagging[]tag[Personnage]nsort[ordre]]\">\u003Cli>\u003C$link/>\u003C/li>\u003C/$list>\u003C/ul>\n\u003C/details>\n\u003C/$list>\n\u003C/div>\n",
 "tags": "$:/tags/SideBar",
 "caption": "Sommaire",
 "list-before": "$:/core/ui/SideBar/Open"
